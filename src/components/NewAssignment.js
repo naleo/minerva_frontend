@@ -1,11 +1,10 @@
 import React, { useState, useRef } from "react";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
 import DatePicker from "react-datepicker";
 import CheckButton from "react-validation/build/button";
 import AssignmentService from "../services/assignment.service";
-import { isEmail } from "validator";
 
 const required = (value) => {
     if (!value) {

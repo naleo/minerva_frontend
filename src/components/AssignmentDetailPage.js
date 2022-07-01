@@ -18,7 +18,7 @@ const AssignmentPage = () => {
                 setContent(_content);
             }
         );
-    }, []);
+    }, [assignmentId]);
 
     return (
         <div className="m-auto p-4 max-w-md bg-white rounded-lg border shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700">
@@ -29,7 +29,6 @@ const AssignmentPage = () => {
             </div>
             <div>
                 <ul
-                    role="list"
                     className="divide-y divide-gray-200 dark:divide-gray-700"
                 >
                     <li className="py-3 sm:py-4">
